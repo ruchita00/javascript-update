@@ -44,5 +44,28 @@ const heros=['shaktiman','shatiman','doga']
 
 let myObj={name:"ruchi",age:'25'}
 
-const myFunction=function(){console.log("hello world");}
+// const myFunction=function(){console.log("hello world");}
 
+
+// *********************************************************
+
+//stack(primitive)  , heap (non-primitive)
+
+let myName= 'ruchita'
+
+let anotherName=myName;
+anotherName='tina'
+
+console.log(myName) //ruchita
+console.log(anotherName); //tina
+
+
+
+let userOne={email:'user@google.com',upi:"user@ybl"}
+
+let userTwo=userOne
+
+userTwo.email='hitesh@google.com'
+
+console.log(userOne.email);
+console.log(userTwo.email);
