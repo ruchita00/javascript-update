@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Async js</h1>
+    <button id="shop">Stop</button>
+  </body>
+  <script>
+    const sayGreed = function () {
+      console.log("async function");
+    };
+
+    const changeText = function () {
+      document.querySelector("h1").innerHTML = "JS ASYNC";
+    };
+
+    const changeMe = setTimeout(changeText, 2000);
+
+    document.querySelector("#shop").addEventListener("click", function () {
+      clearTimeout(changeMe);
+      console.log("STOPPED");
+    });
+
+    // setInterval(() => {
+    //   console.log("async");
+    // }, 2000);
+  </script>
+</html>
